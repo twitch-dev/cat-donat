@@ -1,0 +1,21 @@
+{
+  "name": "cat-donat",
+  "version": "1.0.0",
+  "description": "Donate for twitch users",
+  "main": "run.js",
+  "scripts": {
+    "test": "mocha -t 3000",
+    "start": "node run.js"
+  },
+  "keywords": [
+    "donate",
+    "twitch",
+    "games"
+  ],
+  "author": "Loutchansky Oleg",
+  "license": "MIT",
+  "dependencies": {
+    "client-oauth2": "^2.0.0",
+    "express": "^4.13.4"
+  }
+}
