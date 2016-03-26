@@ -4,6 +4,7 @@ let Twitchalerts = {};
 
 let ClientOAuth2 = require('client-oauth2'),
   app = require('./app'),
+  db = require('./db'),
   config = require('../config');
 
 const authUrl = '/auth/twitchalerts',
@@ -31,12 +32,8 @@ app.get(callbackUrl, (req, res) => {
 
   auth.code.getToken(fullUrl)
     .then((user) => {
-      console.log(user);
-
-      if (Twitchalerts.authorizationUser !== null) {
-        Twitchalerts.authorizationUser(user);
-      }
-
+      
+      
       return res.send(user.accessToken);
     })
     .catch((err) => {
