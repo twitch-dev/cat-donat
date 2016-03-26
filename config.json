@@ -5,5 +5,6 @@
   "accessTokenUri": "https://www.twitchalerts.com/api/v1.0/token",
   "authorizationUri": "https://www.twitchalerts.com/api/v1.0/authorize",
   "donationUri": "https://twitchalerts.com/api/v1.0/donations",
-  "scopes": ["donations.create"]
+  "scopes": ["donations.create"],
+  "mongoUrl": "mongodb://localhost/test"
 }
