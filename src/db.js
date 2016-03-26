@@ -1,20 +1,9 @@
 'use strict';
 
-/*
+var mongoose = require('mongoose');
+var config = require('../config');
+mongoose.connect(config.mongoUrl);
 
-{
-  nickname: "...",
-  auth: {
-    ...
-  }
-}
-
-*/
-
-let db = {};
-
-db.getUserByNickname = function(nickname) {
-  return {};
-}
+let db = mongoose;
 
 module.exports = db;
